@@ -64,6 +64,32 @@ header {
     }
 }
 
+.menu-box {
+    background-color: $dc-color;
+    overflow-y: auto;
+
+    .content {
+        ul {
+            @include centerFlex('horizontal');
+
+            li {
+                @include centerFlex('vertical');
+
+                img {
+                    transform: scale(0.5);
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 0.9rem;
+                    text-transform: $text-upper;
+                }
+            }
+        }
+    }
+}
+
 .footer-top {
     display: flex;
     background-image: url('../images/footer-bg.jpg');
