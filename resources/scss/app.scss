@@ -64,7 +64,7 @@ header {
     }
 }
 
-footer {
+.footer-top {
     display: flex;
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
@@ -101,4 +101,43 @@ footer {
         }
     }
 
+}
+
+.footer-bottom {
+    height: 110px;
+    background-color: lighten($primary-color, 8%);
+
+    .content {
+        @include centerFlex('vertical');
+        justify-content: space-between;
+        height: 100%;
+
+        &>h4 {
+            margin-left: 40px;
+            padding: 13px;
+            border: 2px solid $dc-color;
+            color: $white;
+            cursor: pointer;
+            text-transform: $text-upper;
+        }
+
+        .follow-us {
+            display: flex;
+
+            img {
+                margin: 0 7px;
+                cursor: pointer;
+            }
+
+            &>h4 {
+                color: $dc-color;
+                margin-right: 30px;
+                padding-top: 5px;
+                font-size: 1.1rem;
+                text-transform: $text-upper;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    }
 }

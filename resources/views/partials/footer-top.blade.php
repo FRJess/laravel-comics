@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer-top">
     <div class="content">
         <div class="cols">
             <div class="links">
