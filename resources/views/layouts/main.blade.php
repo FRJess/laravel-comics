@@ -2,23 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    @vite('resources/js/app.js')
+  @vite('resources/js/app.js')
 
-    <title>Laravel Comics</title>
+  <title>Laravel Comics</title>
 </head>
 
 <body>
 
-    @include('partials.header')
+  @include('partials.header')
 
-    @yield('content')
+  @yield('content')
 
-    @include('partials.footer-top')
-    @include('partials.footer-bottom')
+  @include('partials.footer-top')
+  @include('partials.footer-bottom')
 
 </body>
 

@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
-    <main>
-        collectibles
-    </main>
+  <main>
+    collectibles
+  </main>
 @endsection
 
 @section('title')
-    collectibles
+  collectibles
 @endsection

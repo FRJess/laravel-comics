@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
-    <main>
-        fans
-    </main>
+  <main>
+    fans
+  </main>
 @endsection
 
 @section('title')
-    fans
+  fans
 @endsection

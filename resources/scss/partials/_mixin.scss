@@ -1,42 +1,42 @@
 @use "./variables" as *;
 
 @mixin centerFlex($type: 'both') {
-  display: flex;
+    display: flex;
 
-  @if $type =='vertical' {
-    align-items: center;
-  }
+    @if $type =='vertical' {
+        align-items: center;
+    }
 
-  @else if $type =='horizontal' {
-    justify-content: center;
-  }
+    @else if $type =='horizontal' {
+        justify-content: center;
+    }
 
-  @else if $type =='wrap' {
-    flex-wrap: wrap;
-  }
+    @else if $type =='wrap' {
+        flex-wrap: wrap;
+    }
 
-  @else if $type =='both' {
-    align-items: center;
-    justify-content: center;
-  }
+    @else if $type =='both' {
+        align-items: center;
+        justify-content: center;
+    }
 
 }
 
 @mixin button() {
-  border: 0;
-  font-weight: 600;
-  color: $white;
-  text-transform: $text-upper;
-  background-color: $dc-color;
-  cursor: pointer;
-  padding: 8px 45px;
+    border: 0;
+    font-weight: 600;
+    color: $white;
+    text-transform: $text-upper;
+    background-color: $dc-color;
+    cursor: pointer;
+    padding: 8px 45px;
 
-  &:hover {
-    background-color: darken($dc-color, 10%);
-  }
+    &:hover {
+        background-color: darken($dc-color, 10%);
+    }
 }
 
 @mixin image-position() {
-  object-fit: cover;
-  object-position: top;
+    object-fit: cover;
+    object-position: top;
 }
