@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
-    <main>
-        videos
-    </main>
+  <main>
+    videos
+  </main>
 @endsection
 
 @section('title')
-    videos
+  videos
 @endsection
