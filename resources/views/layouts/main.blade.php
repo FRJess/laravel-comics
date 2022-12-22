@@ -17,7 +17,6 @@
 
     @yield('content')
 
-    @include('partials.jumbotron')
     @include('partials.footer-top')
     @include('partials.footer-bottom')
 

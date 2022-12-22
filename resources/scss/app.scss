@@ -19,6 +19,8 @@ body {
     margin: 0 auto;
 }
 
+
+
 header {
     line-height: 120px;
     @include centerFlex('vertical');
@@ -62,6 +64,12 @@ header {
 
         }
     }
+}
+
+.jumbotron img {
+    height: 400px;
+    width: 100%;
+    @include image-position();
 }
 
 .menu-box {
