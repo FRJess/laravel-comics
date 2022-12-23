@@ -2,11 +2,19 @@
 
 @section('content')
   <main>
-    <div class="jumbotron">
-      <img src="../resources/images/jumbotron.jpg" alt="jumbotron" />
-    </div>
     <h2 class>Current series</h2>
     <div class="content">
+      @foreach ($comics as $comic)
+        <div class="card">
+          {{-- <a href="{{ route('product_detail', ['id' => $comic['id']]) }}" class="card"> --}}
+          <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+          <h4>{{ $comic['title'] }}</h4>
+          <p>
+            {{ $comic['price'] }}<br />
+            buy!
+          </p>
+        </div>
+      @endforeach
     </div>
     <button>Load more</button>
   </main>
