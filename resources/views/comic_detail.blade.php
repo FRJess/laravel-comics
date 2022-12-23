@@ -1,0 +1,23 @@
+@extends('layouts.main')
+
+@section('content')
+  <main>
+    <div class="container">
+
+      <div class="card detail">
+        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+        <h1>{{ $comic['title'] }}</h1>
+        <h5>Series: {{ $comic['series'] }} | Release date: {{ $comic['sale_date'] }} | Price: {{ $comic['price'] }}</h5>
+        <p>
+          {!! $comic['description'] !!}
+        </p>
+      </div>
+
+
+    </div>
+  </main>
+@endsection
+
+@section('title')
+  Comics
+@endsection
