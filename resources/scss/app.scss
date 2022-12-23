@@ -136,7 +136,6 @@ main {
 .card {
     position: relative;
     width: calc(100% / 6);
-    padding: 20px;
     cursor: pointer;
 
     img {
@@ -165,7 +164,15 @@ main {
         width: 80%;
         margin: 0 auto;
 
-        h5 {
+        img {
+            width: 150px;
+            height: 250px;
+            @include image-position();
+            transition: 0.5s all;
+        }
+
+
+        h4 {
             margin-bottom: 20px;
         }
 
