@@ -137,20 +137,27 @@ main {
     position: relative;
     width: calc(100% / 6);
     cursor: pointer;
+    display: inline-block;
+    padding-bottom: 10px;
+
+    // a{
+    //     width: 150px;
+    // }
 
     img {
         width: 150px;
-        height: 150px;
+        height: 200px;
         @include image-position();
         transition: 0.5s all;
+        display: inline-block;
     }
 
     h4 {
+        width: 150px;
         color: $white;
         font-size: 0.85rem;
         padding: 5px 0;
-        vertical-align: middle;
-        display: inline-block;
+        display: block;
         text-transform: $text-upper;
     }
 
