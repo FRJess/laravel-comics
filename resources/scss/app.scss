@@ -87,6 +87,8 @@ header {
 
             li {
                 @include centerFlex('vertical');
+                padding-left: 5px;
+                padding-right: 5px;
 
                 img {
                     transform: scale(0.5);
@@ -139,6 +141,10 @@ main {
     cursor: pointer;
     display: inline-block;
     padding-bottom: 10px;
+
+    a{
+        text-decoration: none;
+    }
 
     img {
         width: 150px;
